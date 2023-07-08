@@ -25,8 +25,9 @@ body {
 
 a:link,
 a:visited {
+    transition-duration: 0.45s;
     text-decoration: none;
-    color: #121212;
+    color: var(--black);
     font-weight: bold;
     padding: 14px 16px;
     border-radius: 8px;
@@ -94,12 +95,13 @@ a:visited {
     transform: translate(20px, 0);
 }
 
-.sign-up {
+.main-header .sign-up:link {
     background-color: rgb(248, 247, 244);
 }
 
-.sign-up:hover {
+.main-header .sign-up:hover {
     background-color: rgb(245, 243, 240);
+    color: black;
 }
 
 .hire:link,
@@ -123,4 +125,30 @@ a:visited {
     justify-content: center;
     align-items: center;
     gap: 32px;
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+}
+
+/* DISCOVER LINKS */
+.discover-links:link,
+.discover-links:visited {
+    background-color: rgba(18, 18, 18, 0.5);
+    border-radius: 100px;
+    color: #f1f3f5;
+    font-size: 14px;
+}
+
+.discover-links:hover,
+.discover-links:active {
+    background-color: #fff;
+    color: var(--black);
+    /* transition-duration: 0.9s; */
+}
+
+.discover-links:first-child:link,
+.discover-links:first-child:visited,
+.discover-links:first-child:hover,
+.discover-links:first-child:active {
+    background-color: #fff;
+    color: var(--black);
 }
