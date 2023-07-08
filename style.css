@@ -1,5 +1,126 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+    --light-main: #f783ac;
+    --main-color: #f06595;
+    --black: #121212;
+    --grey: #868e96;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #121212;
+    font-weight: bold;
+    padding: 14px 16px;
+    border-radius: 8px;
+}
+
+/* HEADER */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 32px;
+    position: relative;
+    padding: 0 48px;
+}
+
+.main-header a:hover,
+.main-header a:active {
+    color: var(--grey);
+}
+
+.go-pro:link,
+.go-pro:visited {
+    color: var(--main-color);
+}
+
+.main-header .go-pro:hover,
+.main-header .go-pro:active {
+    color: var(--light-main);
+}
+/* .main-header .go-pro:link,
+.main-header .go-pro:visited {
+    color: var(--main-color);
+} */
+
+.right-header,
+.left-header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.dribbble-icon {
+    height: 35px;
+    width: auto;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.log-in {
+    position: relative;
+}
+
+.log-in::after {
+    content: " ";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(20px, 0);
+}
+
+.sign-up {
+    background-color: rgb(248, 247, 244);
+}
+
+.sign-up:hover {
+    background-color: rgb(245, 243, 240);
+}
+
+.hire:link,
+.hire:visited {
+    background-color: var(--black);
+    color: white;
+}
+
+.hire
+
+/* SECTION 1 */
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+
+.discover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
 }
