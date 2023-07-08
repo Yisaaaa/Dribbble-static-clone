@@ -117,8 +117,10 @@ a:visited {
     flex-direction: column;
     align-items: center;
     padding: 48px 0;
-    background-image: url(./img/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(./img/bg.jpg);
     background-size: cover;
+    color: #fff;
 }
 
 .discover-container {
@@ -179,9 +181,12 @@ a:visited {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-bottom: 32px;
 }
-.search-bar:focus-within {
+.search-bar:focus-within,
+.search-bar:hover {
     box-shadow: 0 0 16px #f06595;
+    transition-duration: 0.3s;
 }
 
 .search-icon {
@@ -202,4 +207,33 @@ a:visited {
 .search-box:focus {
     /* border: none; */
     outline: none;
+}
+
+/* TRENDING SEARCHES */
+.trending-searches {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* color: #fff; */
+    gap: 16px;
+    font-size: 14px;
+}
+
+.trending-searches p {
+    margin-bottom: 2px;
+}
+
+.trending-links:link,
+.trending-links:visited {
+    border: 0.1px solid #ced4da;
+    border-radius: 100px;
+    padding: 8px 16px 2px 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.trending-links:hover,
+.trending-links:active {
+    border-color: #fff;
 }
