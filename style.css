@@ -114,8 +114,11 @@ a:visited {
 
 .section-1 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 48px 0;
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
 }
 
 .discover-container {
@@ -123,9 +126,8 @@ a:visited {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    background-image: url(./img/bg.jpg);
-    background-size: cover;
-    width: 100%;
+    margin-bottom: 48px;
+    /* width: 100%; */
 }
 
 /* DISCOVER LINKS */
@@ -150,4 +152,54 @@ a:visited {
 .discover-links:first-child:active {
     background-color: #fff;
     color: var(--black);
+}
+
+.headline {
+    width: 500px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.website-description {
+    width: 600px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.search-bar {
+    background-color: #fff;
+    width: 600px;
+    display: flex;
+    padding: 16px 24px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.search-bar:focus-within {
+    box-shadow: 0 0 16px #f06595;
+}
+
+.search-icon {
+    fill: var(--grey);
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    height: 24px;
+    width: 100%;
+    border: none;
+}
+
+.search-box:focus {
+    /* border: none; */
+    outline: none;
 }
