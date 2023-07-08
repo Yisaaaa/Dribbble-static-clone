@@ -25,7 +25,7 @@ body {
 
 a:link,
 a:visited {
-    transition-duration: 0.45s;
+    transition-duration: 0.4s;
     text-decoration: none;
     color: var(--black);
     font-weight: bold;
@@ -110,14 +110,12 @@ a:visited {
     color: white;
 }
 
-.hire
-
 /* SECTION 1 */
 
 .section-1 {
     display: flex;
     justify-content: center;
-    padding: 48px;
+    padding: 48px 0;
 }
 
 .discover-container {
@@ -127,6 +125,7 @@ a:visited {
     gap: 32px;
     background-image: url(./img/bg.jpg);
     background-size: cover;
+    width: 100%;
 }
 
 /* DISCOVER LINKS */
