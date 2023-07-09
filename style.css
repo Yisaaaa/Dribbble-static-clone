@@ -20,7 +20,8 @@ FONT SIZE SYSTEM (px)
 }
 
 body {
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial;
+    /* font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial; */
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 a:link,
@@ -121,6 +122,7 @@ a:visited {
         url(./img/bg.jpg);
     background-size: cover;
     color: #fff;
+    margin-bottom: 32px;
 }
 
 .discover-container {
@@ -217,6 +219,7 @@ a:visited {
     /* color: #fff; */
     gap: 16px;
     font-size: 14px;
+    margin-bottom: 32px;
 }
 
 .trending-searches p {
@@ -225,7 +228,7 @@ a:visited {
 
 .trending-links:link,
 .trending-links:visited {
-    border: 0.1px solid #ced4da;
+    border: 0.1px solid #adb5bd;
     border-radius: 100px;
     padding: 8px 16px 2px 16px;
     color: #fff;
@@ -236,4 +239,77 @@ a:visited {
 .trending-links:hover,
 .trending-links:active {
     border-color: #fff;
+}
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* SECTION 2 */
+
+.section-2 {
+    padding: 0 72px;
+}
+
+.sort-btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort-btn-container a:link,
+.sort-btn-container a:visited,
+.sort-btn-container a:hover,
+.sort-btn-container:active {
+    transition: none;
+    padding: 8px 16px;
+    font-weight: 400;
+    border: 1px solid #dee2e6;
+}
+
+.sort-btn-container {
+    font-size: 14px;
+}
+
+.sort-by-icon {
+    height: 12px;
+    stroke-width: 2;
+    margin-bottom: 3px;
+}
+
+.sort-by,
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.filters {
+    gap: 4px;
+}
+
+.sort-by:link,
+.sort-by:visited {
+    color: #495057;
+}
+
+.sort-by:hover,
+.sort-by:active {
+    color: var(--black);
+    border-color: white;
+    box-shadow: 0 0 1px 2px #ffdeeb;
+}
+
+.filter-icon {
+    fill: var(--black);
+    height: 16px;
+    margin-bottom: 4px;
+}
+
+.sort-btn-container .filters:hover,
+.filters:active {
+    border-color: #ced4da;
 }
